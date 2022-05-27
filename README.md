@@ -1,7 +1,7 @@
 # Package Description
 
 A python webcrawler with NLP modules as optional custom built using beautiful soup and many open source packages. it is purpose built with its custom data structure to hold maximum amount of data while maintaining ease of use and access of data.
-
+___
 ## Pre-requisites
 
 - JDK and JAVA_HOME variable set
@@ -29,3 +29,12 @@ crawl.run(url="")
 ```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## LICENSE
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/rick-cee-137/crawler/blob/a4a0d25e1dea1201b9f98938d4f51618a3ab4058/LICENSE)
+
+_____
+![](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)
+![](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+
+![](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)

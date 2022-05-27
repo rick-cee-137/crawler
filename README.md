@@ -1,4 +1,5 @@
 ## Pre-requisites
+
 - JDK and JAVA_HOME variable set
 - apache maven : https://maven.apache.org/install.html
 - install sutime before installing package(https://github.com/FraBle/python-sutime):

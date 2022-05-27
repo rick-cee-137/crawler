@@ -1,3 +1,7 @@
+# Package Description
+
+A python webcrawler with NLP modules as optional custom built using beautiful soup and many open source packages. it is purpose built with its custom data structure to hold maximum amount of data while maintaining ease of use and access of data.
+
 ## Pre-requisites
 
 - JDK and JAVA_HOME variable set

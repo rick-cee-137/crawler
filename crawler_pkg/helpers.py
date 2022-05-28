@@ -160,7 +160,7 @@ class scraper():
             # print(Style.RESET_ALL)
 
             # with open(self.DATA_PATH+"forms/form_" + str(uuid.uuid4()) + "_.txt", "w") as text_file:
-            with open("./forms/form_" + str(uuid.uuid4()) + "_.txt", "w") as text_file:
+            with open("./forms/form_" + str(uuid.uuid4()) + "_.txt", "w", encoding='utf-8') as text_file:
                 text_file.write(str(form_details))
 
     def parse_email_address(self, soup):
@@ -194,15 +194,15 @@ class scraper():
         # print(Fore.GREEN + "[*] dumping exctracts")
         # print(Style.RESET_ALL)
         # with open(self.DATA_PATH+"emails_ids_" + str(uuid.uuid4()) + "_.txt", "w") as text_file:
-        with open("./emails_ids_" + str(uuid.uuid4()) + "_.txt", "w") as text_file:
+        with open("./emails_ids_" + str(uuid.uuid4()) + "_.txt", "w", encoding='utf-8') as text_file:
             text_file.write(str(self.emails))
 
         # with open(self.DATA_PATH+"phone_numbers_" + str(uuid.uuid4()) + "_.txt", "w") as text_file:
-        with open("./phone_numbers_" + str(uuid.uuid4()) + "_.txt", "w") as text_file:
+        with open("./phone_numbers_" + str(uuid.uuid4()) + "_.txt", "w", encoding='utf-8') as text_file:
             text_file.write(str(self.phone_numbers))
 
         # with open(self.DATA_PATH+"datetimes_" + str(uuid.uuid4()) + "_.txt", "w") as text_file:
-        with open("./datetimes_" + str(uuid.uuid4()) + "_.txt", "w") as text_file:
+        with open("./datetimes_" + str(uuid.uuid4()) + "_.txt", "w", encoding='utf-8') as text_file:
             text_file.write(str(self.all_dates))
 
     def parse_tables(self, soup):
@@ -212,7 +212,7 @@ class scraper():
         # for table_num, table in tqdm(enumerate(soup.find_all('table')), desc="parsing tables", leave=True):
         for table_num, table in enumerate(soup.find_all('table')):
             # csv_string = open(self.DATA_PATH+'tables/table_' + str(uuid.uuid4()) + ".csv", 'w')
-            csv_string = open('./tables/table_' + str(uuid.uuid4()) + ".csv", 'w')
+            csv_string = open('./tables/table_' + str(uuid.uuid4()) + ".csv", 'w', encoding='utf-8')
             csv_writer = csv.writer(csv_string)
             for tr in table.find_all('tr'):
                 row = [''.join(cell.stripped_strings) for cell in tr.find_all(['td', 'th'])]

@@ -15,6 +15,6 @@ def run(**kwargs):
 
     s = scraper(kwargs.get("url"))
     s.begin(kwargs.get("max_urls"))
-#
+    return s
 # if __name__ == "__main__":
 #     run(url="https://en.wikipedia.org/wiki/Renewable_energy_in_India#Global_rank", max_urls=10)

@@ -16,7 +16,6 @@ from sutime import SUTime
 import csv
 from tqdm import tqdm, trange
 
-
 class scraper():
     def __init__(self, url, js_toggle=False):
         self.url = url
@@ -212,7 +211,7 @@ class scraper():
         # for table_num, table in tqdm(enumerate(soup.find_all('table')), desc="parsing tables", leave=True):
         for table_num, table in enumerate(soup.find_all('table')):
             # csv_string = open(self.DATA_PATH+'tables/table_' + str(uuid.uuid4()) + ".csv", 'w')
-            csv_string = open('./tables/table_' + str(uuid.uuid4()) + ".csv", 'w', encoding='utf-8')
+            csv_string = open('./tables/table_' + str(uuid.uuid4()) + ".csv", 'w')
             csv_writer = csv.writer(csv_string)
             for tr in table.find_all('tr'):
                 row = [''.join(cell.stripped_strings) for cell in tr.find_all(['td', 'th'])]

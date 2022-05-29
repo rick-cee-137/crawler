@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "crawler_pkg"
-version = "0.1.0"
+version = "0.1.1"
 description = "a custom webcrawler with NLP tools as plugin"
 authors = ["tariq <tariqmohamed59@gmail.com>"]
 license = "MIT"

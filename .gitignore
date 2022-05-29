@@ -22,14 +22,7 @@
 # Private Node Modules
 node_modules/
 creds.js
- 
-# Private Files
-*.json
-*.csv
-*.csv.gz
-*.tsv
-*.tsv.gz
-*.xlsx
+
  
  
 # Mac/OSX
@@ -48,7 +41,6 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/

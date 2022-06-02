@@ -7,7 +7,6 @@ from urllib.parse import urlparse, urljoin
 import phonenumbers
 from email_validator import validate_email, EmailNotValidError
 import uuid
-#import html2csv
 import pandas as pd
 import numpy as np
 from collections import ChainMap, OrderedDict, namedtuple
@@ -15,7 +14,7 @@ import json
 from sutime import SUTime
 from colorama import init, Fore, Back, Style  # use init for term
 import csv
-# import requests_cache
+import requests_cache
 from datetime import timedelta
 
 

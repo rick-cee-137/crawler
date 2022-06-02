@@ -7,7 +7,7 @@ from urllib.parse import urlparse, urljoin
 import phonenumbers
 from email_validator import validate_email, EmailNotValidError
 import uuid
-import html2csv
+#import html2csv
 import pandas as pd
 import numpy as np
 from collections import ChainMap, OrderedDict, namedtuple

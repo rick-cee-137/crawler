@@ -15,7 +15,7 @@ import json
 from sutime import SUTime
 from colorama import init, Fore, Back, Style  # use init for term
 import csv
-import requests_cache
+# import requests_cache
 from datetime import timedelta
 
 

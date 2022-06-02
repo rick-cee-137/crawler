@@ -29,12 +29,16 @@ pip install pkg_name
 ```
 
 ## Usage
-
+#### Py-Pkg:
 ```python
 from crawler_pkg import crawl
 
 # start crawling
 crawl.run(url="")
+```
+#### streamlit app:
+```bash
+streamlit run engine.py
 ```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

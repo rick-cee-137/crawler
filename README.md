@@ -21,6 +21,7 @@ ___
  pip install streamlit
  pip install streamlit-aggrid
  pip install streamlit-multipage
+ pip install requests_cache
  ```
 
 ## Installation
